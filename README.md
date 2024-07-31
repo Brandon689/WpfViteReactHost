@@ -2,6 +2,10 @@
 
 This project demonstrates how to host a Vite-built React application within a WPF application using WebView2. ASP.NET is not required, there is just an ASP Core project to show how you can use an API.
 
+## VS Electron
+- Only 40mb of memory instead of around 100mb.
+- WebView2 uses Edge, which is chromium based, so its similar to Electron.
+
 ![Screenshot of the application](screenshot.png)
 
 ## Features
