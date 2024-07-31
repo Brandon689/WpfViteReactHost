@@ -7,6 +7,12 @@ This project demonstrates how to host a Vite-built React application within a WP
 - WebView2 uses Edge, which is chromium based, so its similar to Electron.
 - Not cross platform, Edge dependency. Could use CEFSharp instead.
 
+# How to dev
+- Run the vite app with pnpm run dev as you would normally and view it in browser
+- Run the ASP server if you're using it, you can delete it if not using
+- In production, follows steps 2 and 3 of getting started below and run the WPF app.
+- Its more convenient to use the normal browser in development.
+
 ![Screenshot of the application](screenshot.png)
 
 ## Features
