@@ -30,6 +30,11 @@ namespace WpfViteReactHost
                     Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ReactApp"),
                     CoreWebView2HostResourceAccessKind.Allow);
 
+                // Basic security settings
+                webView.CoreWebView2.Settings.IsScriptEnabled = true;
+                webView.CoreWebView2.Settings.AreDefaultScriptDialogsEnabled = true;
+                webView.CoreWebView2.Settings.IsWebMessageEnabled = true;
+
                 webView.CoreWebView2.Navigate("http://vite.react.app/index.html");
             }
             else
@@ -38,4 +43,5 @@ namespace WpfViteReactHost
             }
         }
     }
+
 }

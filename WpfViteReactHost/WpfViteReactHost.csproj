@@ -13,6 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="ReactApp\assets\index-BUfAMmkH.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="ReactApp\assets\index-D3Sfl5UQ.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
