@@ -5,6 +5,7 @@ This project demonstrates how to host a Vite-built React application within a WP
 ## VS Electron
 - Only 40mb of memory instead of around 100mb.
 - WebView2 uses Edge, which is chromium based, so its similar to Electron.
+- Not cross platform, Edge dependency. Could use CEFSharp instead.
 
 ![Screenshot of the application](screenshot.png)
 
