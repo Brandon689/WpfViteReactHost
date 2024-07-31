@@ -1,6 +1,6 @@
 # WPF Vite React Host
 
-This project demonstrates how to host a Vite-built React application within a WPF (Windows Presentation Foundation) application using WebView2.
+This project demonstrates how to host a Vite-built React application within a WPF application using WebView2. ASP.NET is not required, there is just an ASP Core project to show how you can use an API.
 
 ![Screenshot of the application](screenshot.png)
 
@@ -23,27 +23,12 @@ This project demonstrates how to host a Vite-built React application within a WP
 2. Navigate to the React app directory and run:
 
     ```sh
-    npm install
-    npm run build
+    pnpm install
+    pnpm run build
     ```
 
-3. Open the WPF solution in Visual Studio
-4. Build and run the WPF application
-
-## Project Structure
-
-- `/WpfApp`: Contains the WPF host application
-- `/ReactApp`: Contains the Vite React application
-- `/WebApi`: Contains the ASP.NET Core Web API (if applicable)
+3. Copy all the files in dist into the ReactApp folder. Set each file to copy to ouput directory, copy if newer in Visual Studio.
 
 ## How It Works
 
 The WPF application uses WebView2 to load the React application. The React app is built and its output is placed in a directory that the WPF app can access. WebView2 is configured to use a virtual host, allowing the React app to make API calls without CORS issues.
-
-## Configuration
-
-Ensure that the paths in the WPF application correctly point to your React app's build output. You may need to adjust the virtual host settings in both the WPF app and the React app to match your development environment.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
